@@ -26,4 +26,5 @@ httpServer.listen(port, function() {
     console.log(`running at port:${port}`);
 });
 
-console.log('刷新是不可能刷新的，这辈子都不可能刷新的');
+console.log('\n刷新是不可能刷新的，这辈子不可能刷新的\n');
+
