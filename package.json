@@ -1,0 +1,16 @@
+{
+  "name": "no-f5",
+  "version": "1.0.0",
+  "description": "刷新是不可能刷新的，这辈子都不可能刷新的",
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tw",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.11.0",
+    "mime": "^2.0.3",
+    "ws": "^3.2.0"
+  }
+}
