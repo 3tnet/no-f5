@@ -3,14 +3,11 @@
 
 # 安装
 
-	```
 	npm i -g no-f5
-	```
-
+	
 ## 使用:
 
-	```
 	no-f5 [options]
-	```
+	
 ## Available Options:
 	`-p` Port to use (defaults to 8080)
