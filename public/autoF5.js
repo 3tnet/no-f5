@@ -3,6 +3,6 @@ var wsServer = new WebSocket(wsUrl);
 wsServer.onmessage = function (e) {
     setTimeout(function () {
         location.reload();
-    }, 10);
+    }, 100);
     wsServer.onmessage = function(){}
 };
