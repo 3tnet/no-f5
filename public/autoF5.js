@@ -1,6 +1,8 @@
 var wsServer = new WebSocket(wsUrl);
 
 wsServer.onmessage = function (e) {
-    location.reload();
+    setTimeout(function () {
+        location.reload();
+    }, 10);
     wsServer.onmessage = function(){}
 };
