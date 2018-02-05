@@ -1,6 +1,6 @@
 {
   "name": "no-f5",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "刷新是不可能刷新的，这辈子都不可能刷新的",
   "bin": "index.js",
   "scripts": {
