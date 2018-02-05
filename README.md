@@ -16,3 +16,5 @@ no-f5 [options]
  `-p` Port to use (defaults to 8080)
 ```
 *现在你可以访问 http://localhost:8080 进入你的应用*
+
+<img src="https://github.com/3tnet/no-f5/blob/master/screenshot/carbon.png">
