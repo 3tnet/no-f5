@@ -23,6 +23,12 @@ f5Server(process.cwd());
 
 const httpServer = http.createServer(server(process.cwd()));
 
+console.log(`
+   _  ______      ________
+  / |/ / __ \____/ __/ __/
+ /    / /_/ /___/ _// _ \ 
+/_/|_/\____/   /_/  \___/ 
+`);
 // 指定一个监听的接口
 httpServer.listen(port, function () {
     console.log('runing...');
@@ -33,5 +39,4 @@ httpServer.listen(port, function () {
     cp.exec(`start http://localhost:${port}`);
 });
 
-console.log('\n刷新是不可能刷新的，这辈子不可能刷新的\n');
 
