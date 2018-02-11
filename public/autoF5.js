@@ -6,3 +6,6 @@ wsServer.onmessage = function (e) {
     }, 100);
     wsServer.onmessage = function(){}
 };
+window.addEventListener('beforeunload', function () {
+    wsServer.close();
+});

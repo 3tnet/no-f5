@@ -23,10 +23,14 @@ f5Server(process.cwd());
 
 const httpServer = http.createServer(server(process.cwd()));
 
-console.log(new Buffer('ICAgXyAgX19fX19fICAgICAgX19fX19fX18KICAvIHwvIC8gX18gXF9fX18vIF9fLyBfXy8KIC8gICAgLyAvXy8gL19fXy8gXy8vIF8gXCAKL18vfF8vXF9fX18vICAgL18vICBcX19fLyA=', 'base64').toString())
-
+httpServer.on('connect', () => {
+    console.log('connect')
+});
+httpServer.on('error', () => {
+    console.log('error')
+});
 // 指定一个监听的接口
-httpServer.listen(port, function () {
+httpServer.listen(port, () => {
     console.log('runing...');
     for (const ip of ips) {
         console.log(`http://${ip}:${port}`);
@@ -35,8 +39,4 @@ httpServer.listen(port, function () {
     cp.exec(`start http://localhost:${port}`);
 });
 
-                                                           
-                                                           
-
-
-
+console.log(new Buffer('ICAgXyAgX19fX19fICAgICAgX19fX19fX18KICAvIHwvIC8gX18gXF9fX18vIF9fLyBfXy8KIC8gICAgLyAvXy8gL19fXy8gXy8vIF8gXCAKL18vfF8vXF9fX18vICAgL18vICBcX19fLyA=', 'base64').toString());
