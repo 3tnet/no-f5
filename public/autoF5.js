@@ -1,4 +1,4 @@
-var wsServer = new WebSocket(wsUrl);
+var wsServer = new WebSocket('ws://' + window.location.host);
 
 wsServer.onmessage = function (e) {
     setTimeout(function () {
