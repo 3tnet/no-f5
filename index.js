@@ -39,6 +39,6 @@ if (isWatch) {
   f5Server(process.cwd(), server);
 }
 
-console.log(new Buffer('ICAgXyAgX19fX19fICAgICAgX19fX19fX18KICAvIHwvIC8gX18gXF9fX18vIF9fLyBfXy8KIC8gICAgLyAvXy8gL19fXy8gXy8vIF8gXCAKL18vfF8vXF9fX18vICAgL18vICBcX19fLyA=', 'base64').toString());
+console.log(Buffer.from('ICAgXyAgX19fX19fICAgICAgX19fX19fX18KICAvIHwvIC8gX18gXF9fX18vIF9fLyBfXy8KIC8gICAgLyAvXy8gL19fXy8gXy8vIF8gXCAKL18vfF8vXF9fX18vICAgL18vICBcX19fLyA=', 'base64').toString());
 
 process.on('uncaughtException', () => {});
