@@ -13,7 +13,11 @@ no-f5 [options]
 ```
 ## Available Options:
 ```shell
-`-p` Port to use (defaults to 8080)
+    -p, --port <n>       设置端口
+    -o, --only           仅开启http服务
+    -f, --forward <url>  欲代理url
+    -t, --target <url>   代理目标url
+    -h, --help           output usage information
 ```
 *现在你可以访问 http://localhost:8080 进入你的应用*
 
